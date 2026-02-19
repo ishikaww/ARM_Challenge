@@ -39,7 +39,23 @@ The link to the Dataset we have used can be accessed [here](https://universe.rob
 After running the YOLO model for 50 Epochs the results we got was:
 <img width="1390" height="468" alt="image" src="https://github.com/user-attachments/assets/a442e3df-b91a-40dd-b471-36bf30928c02" />
 
-For more info for on the ML model's working please refer to the [documentation]
+For more info for on the ML model's working please refer to the [documentation](final_report.pdf)
 
 ### Website 
+The primary objective of developing the web interface was to:
+* Stream live pothole detection results remotely
+* Monitor detection performance in real time
+* Display bounding box predictions on live video
+* Enable scalability for future cloud integration
+* Provide a user-friendly interface for demonstration and deployment
+  
+  <img width="1534" height="903" alt="image" src="https://github.com/user-attachments/assets/6be34dc3-7706-478a-8467-cb17b518f565" />
+
+## Roadmap
+Our furthere steps include:
+* Packaging the Raspberry Pi to be installed on the dashboard of a car.
+* Live Feed from the car to be viewed on the website.
+* SQLite database must be integrated to cloud and updated in real time on the website dashboard.
+* Development of a pothole hotspot map from the data acquired during the testing phase of our project.
+
 
