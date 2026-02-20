@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Road Anomaly Detection Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <h1>🚧 Road Anomaly Detection System</h1>
+        <div class="nav-links">
+            <a href="index.html">Map</a>
+            <a href="admin.html">Admin</a>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!-- Stats Section -->
+        <div class="stats">
+            <div class="card">
+                <h3>Total Frames</h3>
+                <p id="frames">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Potholes Detected</h3>
+                <p id="potholes">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Status</h3>
+                <p class="active">🟢 System Active</p>
+            </div>
+        </div>
+
+        <!-- Video Section -->
+        <div class="card video-card">
+            <h2>🎥 Live Camera Feed</h2>
+
+            <div id="placeholder" class="video-placeholder">
+                <p>No Stream Loaded</p>
+                <button onclick="loadVideo()">Add Footage</button>
+            </div>
+
+            <input type="file" id="videoInput" accept="video/*" hidden>
+
+            <video id="videoPlayer" controls autoplay></video>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
